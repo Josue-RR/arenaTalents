@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="logo" style="display: flex; align-items: center; justify-content: center;">
+            <a style="text-decoration: none;" href="index.php">
+                <h1>Arena</h1>
+                <h1 style="margin-left: 30px;">Talents</h1>
+            </a>
+            <img src="img/Arena_Talents__1_-removebg-preview.png" alt="" style=" height:130px;">
+        </div>
+        <p style=" font-size: 20px; color: rgb(0, 0, 0); font-weight: bold">Login</p>
+    </div>
+    <form action="php/login.php" method="post">
+
+        <p style="color: rgb(0, 0, 0); margin: 5px; font-size: 16px;">Email:</p>
+        <input type="email" name="email" placeholder="email">
+
+        <p style="color: rgb(0, 0, 0); margin: 5px; font-size: 16px;">Senha:</p>
+        <input type="password" name="senha" placeholder="senha">
+        <br>
+
+        <input style="color: white;" class="submit" type="submit" name="submit" value="Entrar">
+
+        <div class="cadastro" style="font-size: 13px; color: rgb(0, 0, 0); padding-top: 5px; text-decoration: none;">
+            <a href="cadastro.html">
+                <p>Cadastre-se</p>
+            </a>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

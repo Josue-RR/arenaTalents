@@ -1,0 +1,127 @@
+body *{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(255, 255, 255);
+}
+li{
+    list-style: none;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+h1{
+    color: black;
+    margin-right: 20px;
+}
+
+.navbar{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    padding: 0 34px;
+    border-bottom: 2px solid #0000003c;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+}
+.nav-link :hover{
+    color: rgb(114, 114, 114);
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 20px;
+    height: 1px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+@media(max-width: 900px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+      transform: translatey(7px) rotate(-5000deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translatey(-5px) rotate(-45.2deg);
+      }
+      header{
+        position:fixed;
+        width: 100vw;
+      }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 5px;
+        border-radius: 0 0 20px 20px;
+        background-color: white;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        padding: 5px 0;
+    }
+    .nav-item{
+        margin: 15px 0 ;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.name p{
+    display: flex;
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    gap: 8px;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    padding-top: 170px;
+    gap: 8px;
+}
+
+.obs p{
+    display: flex;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7.5);
+    font-size: 20px;
+    
+}
+
+#desc {
+    text-decoration: underline;
+    
+}

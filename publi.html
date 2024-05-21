@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/publi.css">
+    <title>Nova Publicação</title>
+</head>
+
+<body>
+    <div class="publi">
+        <div class="logo" style="display: flex; align-items: center; justify-content: center;">
+            <a style="text-decoration: none;" href="index.php">
+                <h1>Arena</h1>
+                <h1 style="margin-left: 30px;">Talents</h1>
+            </a>
+            <img src="img/Arena_Talents__1_-removebg-preview.png" alt="" style=" height:130px;">
+        </div>
+        <p style=" font-size: 20px; color: rgb(0, 0, 0); font-weight: bold">Nova Publicação</p>
+    </div>
+    <form method="post" enctype="multipart/form-data" action="php/novapubli.php">
+        <p style="padding-top: 15px;">Titulo</p>
+        <input type="text" placeholder="Titulo" name="titulo">
+        <p>Descrição</p>
+        <input type="text" placeholder="Descrição" name="descricao">
+        <p>Esportes</p>
+        <input type="text" placeholder="Esporte" name="esporte">
+        <p>Anexo</p>
+        <input type="file" name="arquivo">
+        <br><br>
+        <button type="submit" style="color: rgb(255, 255, 255);">Publicar</button>
+    </form>
+</body>
+
+</html>

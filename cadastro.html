@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="cadastro">
+        <div class="logo" style="display: flex; align-items: center; justify-content: center;">
+            <a style="text-decoration: none;" href="index.php">
+                <h1>Arena</h1>
+                <h1 style="margin-left: 30px;">Talents</h1>
+            </a>
+            <img src="img/Arena_Talents__1_-removebg-preview.png" alt="" style=" height:130px;">
+        </div>
+        <p style=" font-size: 20px; color: rgb(0, 0, 0); font-weight: bold">Cadastro</p>
+        <br>
+    </div>
+
+
+    <form action="php/cadastro.php" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <p>Nome:</p>
+            <input type="text" placeholder="Nome" name="nome">
+            <p>Email:</p>
+            <input type="email" placeholder="Email" name="email">
+        </div>
+        <div class="row">
+            <p>Data de nascimento:</p>
+            <input type="date" placeholder="Data de Nascimento" name="datanasc">
+            <p>Telefone:</p>
+            <input type="text" placeholder="Telefone" name="telefone">
+        </div>
+        <div class="row">
+            <p>Cidade:</p>
+            <input type="text" placeholder="Cidade" name="cidade">
+            <p>Tipo de usuario:</p>
+            <select name="Usuario" id="usuario">
+                <option value="jogador">Jogador</option>
+                <option value="empresario">Empresario</option>
+                <option value="normal">Normal</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+        <div class="row">
+            <p>Senha:</p>
+            <input type="password" placeholder="Senha" name="senha">
+        </div>
+        <div class="row">
+            <p>Conte-nos sobre você..</p>
+            <textarea class="form-control" placeholder="Conte-nos sobre você.." name="descricao"></textarea>
+        </div>
+        <div class="row">
+        </div>
+        <button type="submit" style="color: rgb(255, 255, 255);">Cadastre-se</button>
+    </form>
+
+
+
+</body>
+
+</html>
